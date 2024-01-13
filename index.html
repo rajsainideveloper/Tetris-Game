@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tetris</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="scoreContainer">
+            <div class="level">
+                <p>Level</p>
+                <button onclick="levelDown()" id="levelDown" type="button" name="levelDown">-</button>
+                <span id="level"></span>
+                <button onclick="levelUp()" id="levelUp" type="button" name="levelUp">+</button>
+                <button onclick="startGame()" id="strtBtn" type="button" name="strtBtn">Start</button>
+            </div>
+            <br />
+            <div class="scroe">
+                <p>Score</p>
+                <div id="score">0</div>
+            </div>
+        </div>
+        <div class="container"></div>
+        <div class="btncontainer">
+            <button onclick="goLeft()" type="button" name="left" id="leftBtn">&lt;</button>
+            <button onclick="goDown()" type="button" name="down" id="donwBtn">&darr;</button>
+            <button onclick="goRight()" type="button" name="right" id="rightBtn">&gt;</button>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
